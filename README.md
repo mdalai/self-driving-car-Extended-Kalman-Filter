@@ -23,4 +23,45 @@ Udacity Self Driving Car Nanodegree Term2 Project 1
 ### C++
 
 
+[//]: # (Image References)
+[error1]: ./assets/debug_error1.PNG
+[error2]: ./assets/debug_error2.PNG
+[theta_normalize]: ./assets/debug_normalize.PNG
+[simulater]: ./assets/simulater.PNG
+[test1]: ./assets/test1.PNG
+[test2]: ./assets/test2.PNG
+[test3]: ./assets/test3.PNG
 
+The simulater look like:
+
+![alt text][simulator]
+
+# Problem Solving Process
+1. Finish all TODOs and compile with following process:
+```bash
+mkdir build
+cd build
+cmake .. && make
+./ExtendedKF
+```
+
+2. Throws a variable declaration error as shown in bellow. The solution is:
+   * The class variables must be declared in the class defination part of header file - [FusionFKF.h].
+   
+   ![alt text][error1]
+
+3. Recompile successful. Run the program displays "Listeing to port 4567". When start the simulator, it shows "Connected" if everything works normal. 
+```bash
+cmake .. && make
+./ExtendedKF
+```
+I start the simulator and get following messy result.
+
+  ![alt text][test1]
+
+4. I update
+  ![alt text][test2]
+  
+  ![alt text][test3]
+ 
+ 
