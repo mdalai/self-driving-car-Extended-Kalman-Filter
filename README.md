@@ -94,6 +94,10 @@ Much better result. However some estimations are still off the track.
     std::cout << " ---------------------------------------- Normalized Theta ϕ = " << y(1) << std::endl;
   }
 ```
+I got following debugging print value:
+![alt text][theta_normalize]
+
+The final result:
 
   ![alt text][test3]
  
