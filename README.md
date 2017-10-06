@@ -68,7 +68,7 @@ Then following compile error showed up:
 
   ![alt text][error2]
 
-#### 5. Google "c++ atan2", I found the syntax of (atan2)[http://www.cplusplus.com/reference/cmath/atan2/].
+#### 5. Google "c++ atan2", I found the syntax of [atan2](http://www.cplusplus.com/reference/cmath/atan2/).
 ```c++
 //double theta = atan(py / px)
 double theta = atan2(py, px);  // In C++, atan2() returns values between -pi and pi
