@@ -12,3 +12,15 @@ Udacity Self Driving Car Nanodegree Term2 Project 1
 
 **Udacity Self Driving Car Extended Kalman Filter project exactly serves for this purpose.**
 
+# Setup
+## Simulater for generating data
+
+
+## Server for accepting data and process data
+
+### websocket
+
+### C++
+
+
+
