@@ -66,14 +66,14 @@ double theta = atan2(py / px);  // In C++, atan2() returns values between -pi an
 ```
 Then following compile error showed up:
 
-  ![alt text][erro2]
+  ![alt text][error2]
 
 5. Google "c++ atan2", I found the syntax of (atan2)[http://www.cplusplus.com/reference/cmath/atan2/].
 ```c++
 //double theta = atan(py / px)
 double theta = atan2(py, px);  // In C++, atan2() returns values between -pi and pi
 ```
-Much better result. However there are some
+Much better result. However some estimations are still off the track.
   ![alt text][test2]
   
   ![alt text][test3]
