@@ -12,10 +12,23 @@ Udacity Self Driving Car Nanodegree Term2 Project 1
 
 **Udacity Self Driving Car Extended Kalman Filter project exactly serves for this purpose.**
 
+
+
+[//]: # (Image References)
+[error1]: ./assets/debug_error1.PNG
+[error2]: ./assets/debug_error2.PNG
+[theta_normalize]: ./assets/debug_normalize.PNG
+[simulater]: ./assets/simulater.PNG
+[test1]: ./assets/test1.PNG
+[test2]: ./assets/test2.PNG
+[test3]: ./assets/test3.PNG
+
 # Setup
 ### Simulater for generating data
 * Download the simulator [term2_sim_windows.zip] from [here](https://github.com/udacity/self-driving-car-sim/releases).
-* and install it.
+* and unzip the downloaded file and run term2_sim.exe. You will see the simulator generates following track:
+
+![alt text][simulater]
 
 ### Bash on Ubuntu on Windows
 * Only Windows 10 support this feature.
@@ -47,24 +60,6 @@ cmake .. && make
 ./ExtendedKF # or ./particle_filter 
 ```
 (Make sure you also run the simulator on the Windows host machine) If you see this message, it is working Listening to port 4567 Connected!!!
-
-### websocket
-
-### C++
-
-
-[//]: # (Image References)
-[error1]: ./assets/debug_error1.PNG
-[error2]: ./assets/debug_error2.PNG
-[theta_normalize]: ./assets/debug_normalize.PNG
-[simulater]: ./assets/simulater.PNG
-[test1]: ./assets/test1.PNG
-[test2]: ./assets/test2.PNG
-[test3]: ./assets/test3.PNG
-
-The simulater look like:
-
-![alt text][simulater]
 
 # Problem Solving Process
 #### 1. Finish all TODOs and compile with following process:
