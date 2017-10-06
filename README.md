@@ -13,7 +13,12 @@ Udacity Self Driving Car Nanodegree Term2 Project 1
 **Udacity Self Driving Car Extended Kalman Filter project exactly serves for this purpose.**
 
 # Setup
-## Simulater for generating data
+### Simulater for generating data
+* Download the simulator [term2_sim_windows.zip] from [here](https://github.com/udacity/self-driving-car-sim/releases).
+* and install it.
+
+### Bash on Ubuntu on Windows
+*
 
 
 ## Server for accepting data and process data
@@ -34,7 +39,7 @@ Udacity Self Driving Car Nanodegree Term2 Project 1
 
 The simulater look like:
 
-![alt text][simulator]
+![alt text][simulater]
 
 # Problem Solving Process
 #### 1. Finish all TODOs and compile with following process:
