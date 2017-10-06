@@ -36,14 +36,14 @@ Udacity Self Driving Car Nanodegree Term2 Project 1
 * Data send back and forth between simulator and processor take place in real time. 
 
 ## Setup
-### Simulater (Client)
+### Simulater (Client) on Windows
 * Download the simulator [term2_sim_windows.zip] from [here](https://github.com/udacity/self-driving-car-sim/releases).
 * and unzip the downloaded file and run term2_sim.exe. You will see the simulator generates following track:
 
 ![alt text][simulater]
 
-### Server
-* Server only runs on Bash. We will use **Bash on Ubuntu on Windows**. 
+### Processor (Server) on Windows
+* We will use [uWebSocketIO](https://github.com/uNetworking/uWebSockets) to accept and respond data in real time. Unfortunately, uWebSocketIO only works on Bash. We will use **Bash on Ubuntu on Windows**. 
 * Environment setup
 
 #### Bash on Ubuntu on Windows
