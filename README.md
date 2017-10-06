@@ -1,16 +1,16 @@
 # self-driving-car-Extended-Kalman-Filter
 Udacity Self Driving Car Nanodegree Term2 Project 1
 ## Purpose
-**Main Purpose**: learn how to track car or biker around the self driving car with Lidar and Randar. Tracking means:
+**Main Purpose**: learn how to track car or biker around the self driving car with Lidar and Radar. Tracking means:
 * where the object is: **Position**.
 * and how fast the object is moving: **Velocity**.
 
-**In order to solve this problem I have to learn:**
+**To solve above problem we will use following techniques:**
 * Kalman Filter: the algorithm that serves for tracking the object.
 * C++: tracking process has to be fast. The prediction result has to respond in real time, so that car would not hit the object around. This requires a fast programming language C++.
-* How LiDar and Radar measure. 
+* How LiDar and Radar measure the object. 
 
-**Udacity Self Driving Car Extended Kalman Filter project exactly serves for this purpose.**
+**[Udacity](www.udacity.com) designed Extended Kalman Filter project in its Self Driving Car Nanodegree program for the purpose of grabbing above ideas and hand-on practice what have learned.**
 
 
 
@@ -22,6 +22,18 @@ Udacity Self Driving Car Nanodegree Term2 Project 1
 [test1]: ./assets/test1.PNG
 [test2]: ./assets/test2.PNG
 [test3]: ./assets/test3.PNG
+[overview]: ./assets/overview.PNG
+
+## Overview
+![alt text][overview]
+
+1. Simulator generates LASER data and RADAR data
+2. Processor accept the data 
+3. Accepted data are processed with Kalman Filter algorithm that is programmed in C++.
+4. The processed result is returend back to the simulator and display the result.
+
+* Cycle above steps.
+* Data send back and forth between simulator and processor take place in real time. 
 
 ## Setup
 ### Simulater (Client)
