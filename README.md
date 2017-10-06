@@ -37,7 +37,7 @@ The simulater look like:
 ![alt text][simulator]
 
 # Problem Solving Process
-1. Finish all TODOs and compile with following process:
+#### 1. Finish all TODOs and compile with following process:
 ```bash
 mkdir build
 cd build
@@ -45,12 +45,12 @@ cmake .. && make
 ./ExtendedKF
 ```
 
-2. Throws a variable declaration error as shown in bellow. The solution is:
+#### 2. Throws a variable declaration error as shown in bellow. The solution is:
    * The class variables must be declared in the class defination part of header file - [FusionFKF.h].
    
    ![alt text][error1]
 
-3. Recompile successful. Run the program displays "Listeing to port 4567". When start the simulator, it shows "Connected" if everything works normal. 
+#### 3. Recompile successful. Run the program displays "Listeing to port 4567". When start the simulator, it shows "Connected" if everything works normal. 
 ```bash
 cmake .. && make
 ./ExtendedKF
@@ -59,7 +59,7 @@ I start the simulator and get following messy result.
 
   ![alt text][test1]
 
-4. I used the **_atan_** when transforming the value of Theta from Cartesian to polar. It is suggested to **__use atan2()__**.
+#### 4. I used the **_atan_** when transforming the value of Theta from Cartesian to polar. It is suggested to **__use atan2()__**.
 ```c++
 //double theta = atan(py / px)
 double theta = atan2(py / px);  // In C++, atan2() returns values between -pi and pi
@@ -68,7 +68,7 @@ Then following compile error showed up:
 
   ![alt text][error2]
 
-5. Google "c++ atan2", I found the syntax of (atan2)[http://www.cplusplus.com/reference/cmath/atan2/].
+#### 5. Google "c++ atan2", I found the syntax of (atan2)[http://www.cplusplus.com/reference/cmath/atan2/].
 ```c++
 //double theta = atan(py / px)
 double theta = atan2(py, px);  // In C++, atan2() returns values between -pi and pi
