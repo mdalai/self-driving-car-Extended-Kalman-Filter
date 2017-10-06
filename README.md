@@ -75,7 +75,26 @@ double theta = atan2(py, px);  // In C++, atan2() returns values between -pi and
 ```
 Much better result. However some estimations are still off the track.
   ![alt text][test2]
-  
+
+#### 6. Normalize ϕ in the y vector so that its angle is between −pi and pi;
+```c++
+   /* //Lecture L5.20
+     You'll need to make sure to normalize ϕ in the y vector so that its angle is between −pi and pi; 
+     in other words, add or subtract 2pi from ϕ until it is between −pi and pi. */
+  const double pi = 3.14;  // 3.14159265358979323846
+  if (y(1) < -pi) {
+    std::cout << "---------------------------------------- Theta is < -3.14.  ϕ = " << y(1);
+    y(1) = y(1) + 2*pi;
+    std::cout << " ---------------------------------------- Normalized Theta ϕ = " << y(1) << std::endl;
+
+  }
+  else if (y(1) > pi) {
+    std::cout << "---------------------------------------- Theta is < -3.14.  ϕ = " << y(1);
+    y(1) = y(1) - 2*pi;
+    std::cout << " ---------------------------------------- Normalized Theta ϕ = " << y(1) << std::endl;
+  }
+```
+
   ![alt text][test3]
  
  
