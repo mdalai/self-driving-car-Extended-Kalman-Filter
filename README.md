@@ -65,7 +65,7 @@ cmake .. && make
 ```
 (Make sure you also run the simulator on the Windows host machine) If you see this message, it is working Listening to port 4567 Connected!!!
 
-# Problem Solving Process
+## Problem Solving Process
 #### 1. Finish all TODOs and compile with following process:
 ```bash
 mkdir build
