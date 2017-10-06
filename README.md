@@ -59,7 +59,21 @@ I start the simulator and get following messy result.
 
   ![alt text][test1]
 
-4. I update
+4. I used the **_atan_** when transforming the value of Theta from Cartesian to polar. It is suggested to **__use atan2()__**.
+```c++
+//double theta = atan(py / px)
+double theta = atan2(py / px);  // In C++, atan2() returns values between -pi and pi
+```
+Then following compile error showed up:
+
+  ![alt text][erro2]
+
+5. Google "c++ atan2", I found the syntax of (atan2)[http://www.cplusplus.com/reference/cmath/atan2/].
+```c++
+//double theta = atan(py / px)
+double theta = atan2(py, px);  // In C++, atan2() returns values between -pi and pi
+```
+Much better result. However there are some
   ![alt text][test2]
   
   ![alt text][test3]
