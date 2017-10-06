@@ -18,7 +18,12 @@ Udacity Self Driving Car Nanodegree Term2 Project 1
 * and install it.
 
 ### Bash on Ubuntu on Windows
-*
+* Only Windows 10 support this feature.
+* You have to enable Ubuntu bash on Windows with following steps.
+   * Enable Developer Mode: Settings -> Update & Security -> For Developers -> Activate the “Developer Mode”.
+   * Enable the “Windows Subsystem for Linux (Beta)”: Control Panel -> “Programs” -> “Turn Windows Features On or Off” under Programs and Features. Enable the “Windows Subsystem for Linux (Beta)”.
+   * Restart the computer.
+* See more details in this [step by step guide](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
 
 
 ## Server for accepting data and process data
