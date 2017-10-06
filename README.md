@@ -27,22 +27,24 @@ Udacity Self Driving Car Nanodegree Term2 Project 1
 
 
 ## Server for accepting data and process data
+search "bash" and click "Bash on Ubuntu on Windows" app. Then do following command step by step.
 ```bash
 sudo apt-get update
 sudo apt-get install git
 sudo apt-get install cmake
 sudo apt-get install openssl
 sudo apt-get install libssl-dev
-git clone https://github.com/udacity/CarND-Kidnapped-Vehicle-Project or whatever CarND project
+git clone https://github.com/udacity/CarND-Extended-Kalman-Filter-Project.git
 sudo rm /usr/lib/libuWS.so
-navigate to CarND-Kidnapped-Vehicle-Project/
+# navigate to CarND-Kidnapped-Vehicle-Project/
+cd  CarND-Kidnapped-Vehicle-Project
 ./install-ubuntu.sh
 
-//at the top level of the project repository 
+# at the top level of the project repository 
 mkdir build && cd build
 cmake .. && make
-//Launch the simulator from Windows and execute the run command for the project, for example 
-./ExtendedKF or ./particle_filter 
+# Launch the simulator from Windows and execute the run command for the project, for example 
+./ExtendedKF # or ./particle_filter 
 ```
 (Make sure you also run the simulator on the Windows host machine) If you see this message, it is working Listening to port 4567 Connected!!!
 
