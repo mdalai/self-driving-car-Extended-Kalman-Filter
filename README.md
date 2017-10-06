@@ -59,7 +59,7 @@ I start the simulator and get following messy result.
 
   ![alt text][test1]
 
-#### 4. I used the **_atan_** when transforming the value of Theta from Cartesian to polar. It is suggested to **__use atan2()__**.
+#### 4. I used the **_atan_** when transforming the value of Theta from Cartesian to polar. It is suggested to **__use atan2()__**. Update following code in KalmanFilter::UpdateEKF of [kalman_filter.cpp].
 ```c++
 //double theta = atan(py / px)
 double theta = atan2(py / px);  // In C++, atan2() returns values between -pi and pi
@@ -68,7 +68,7 @@ Then following compile error showed up:
 
   ![alt text][error2]
 
-#### 5. Google "c++ atan2", I found the syntax of [atan2](http://www.cplusplus.com/reference/cmath/atan2/).
+#### 5. Google "c++ atan2", I found the syntax of [atan2](http://www.cplusplus.com/reference/cmath/atan2/). Update following code in KalmanFilter::UpdateEKF of [kalman_filter.cpp].
 ```c++
 //double theta = atan(py / px)
 double theta = atan2(py, px);  // In C++, atan2() returns values between -pi and pi
@@ -76,7 +76,7 @@ double theta = atan2(py, px);  // In C++, atan2() returns values between -pi and
 Much better result. However some estimations are still off the track.
   ![alt text][test2]
 
-#### 6. Normalize ϕ in the y vector so that its angle is between −pi and pi;
+#### 6. Normalize ϕ in the y vector so that its angle is between −pi and pi; Update following code in KalmanFilter::UpdateEKF of [kalman_filter.cpp].
 ```c++
    /* //Lecture L5.20
      You'll need to make sure to normalize ϕ in the y vector so that its angle is between −pi and pi; 
