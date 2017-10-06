@@ -1,6 +1,6 @@
 # self-driving-car-Extended-Kalman-Filter
 Udacity Self Driving Car Nanodegree Term2 Project 1
-# Purpose
+## Purpose
 **Main Purpose**: learn how to track car or biker around the self driving car with Lidar and Randar. Tracking means:
 * where the object is: **Position**.
 * and how fast the object is moving: **Velocity**.
@@ -23,14 +23,18 @@ Udacity Self Driving Car Nanodegree Term2 Project 1
 [test2]: ./assets/test2.PNG
 [test3]: ./assets/test3.PNG
 
-# Setup
-### Simulater for generating data
+## Setup
+### Simulater (Client)
 * Download the simulator [term2_sim_windows.zip] from [here](https://github.com/udacity/self-driving-car-sim/releases).
 * and unzip the downloaded file and run term2_sim.exe. You will see the simulator generates following track:
 
 ![alt text][simulater]
 
-### Bash on Ubuntu on Windows
+### Server
+* Server only runs on Bash. We will use **Bash on Ubuntu on Windows**. 
+* Environment setup
+
+#### Bash on Ubuntu on Windows
 * Only Windows 10 support this feature.
 * You have to enable Ubuntu bash on Windows with following steps.
    * Enable Developer Mode: Settings -> Update & Security -> For Developers -> Activate the “Developer Mode”.
@@ -39,7 +43,7 @@ Udacity Self Driving Car Nanodegree Term2 Project 1
 * See more details in this [step by step guide](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
 
 
-## Server for accepting data and process data
+#### Environment setup
 search "bash" and click "Bash on Ubuntu on Windows" app. Then do following command step by step.
 ```bash
 sudo apt-get update
