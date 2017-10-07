@@ -89,33 +89,33 @@ cmake .. && make
    
    ![alt text][error1]
 
-#### 3. Recompile successful. Run the program displays "Listeing to port 4567". When start the simulator, it shows "Connected" if everything works normal. 
+#### 3. The code recompiled successful. Run the program with compilied file, displays "Listeing to port 4567". Start the simulator, it should show "Connected" if everything is working. 
 ```bash
 cmake .. && make
 ./ExtendedKF
 ```
-I start the simulator and get following messy result.
+I started the simulator and get following messy result. It means the tracking result is incorrect, especially after half way through.
 
   ![alt text][test1]
 
-#### 4. I used the **_atan_** when transforming the value of Theta from Cartesian to polar. It is suggested to **__use atan2()__**. Update following code in KalmanFilter::UpdateEKF of [kalman_filter.cpp].
+#### 4. I used the **_atan()_** when transforming the value of Theta from Cartesian to polar. However, in the project tips, it is suggested to use **__atan2()__**. Updated following code in KalmanFilter::UpdateEKF of [kalman_filter.cpp].
 ```c++
 //double theta = atan(py / px)
 double theta = atan2(py / px);  // In C++, atan2() returns values between -pi and pi
 ```
-Then following compile error showed up:
+The following compile error showed up:
 
   ![alt text][error2]
 
-#### 5. Google "c++ atan2", I found the syntax of [atan2](http://www.cplusplus.com/reference/cmath/atan2/). Update following code in KalmanFilter::UpdateEKF of [kalman_filter.cpp].
+#### 5. Googled "c++ atan2", I found the syntax of [atan2](http://www.cplusplus.com/reference/cmath/atan2/) was wrong in my code. Updated following code in KalmanFilter::UpdateEKF of [kalman_filter.cpp].
 ```c++
 //double theta = atan(py / px)
 double theta = atan2(py, px);  // In C++, atan2() returns values between -pi and pi
 ```
-Much better result. However some estimations are still off the track.
+Much better result. However, some tracking results were still off the track.
   ![alt text][test2]
 
-#### 6. Normalize ϕ in the y vector so that its angle is between −pi and pi; Update following code in KalmanFilter::UpdateEKF of [kalman_filter.cpp].
+#### 6. Then, I normalized ϕ in the y vector to make sure its angle values were between −pi and pi; Updated following code in KalmanFilter::UpdateEKF of [kalman_filter.cpp].
 ```c++
    /* //Lecture L5.20
      You'll need to make sure to normalize ϕ in the y vector so that its angle is between −pi and pi; 
@@ -133,7 +133,7 @@ Much better result. However some estimations are still off the track.
     std::cout << " ---------------------------------------- Normalized Theta ϕ = " << y(1) << std::endl;
   }
 ```
-I got following debugging print value:
+I got following debugging print. It means there is a value that is smaller than -pi. This value is screwing up the tracking resuls.
 ![alt text][theta_normalize]
 
 The final result:
