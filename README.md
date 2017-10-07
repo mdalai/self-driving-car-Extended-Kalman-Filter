@@ -78,15 +78,13 @@ cmake .. && make
 (Make sure you also run the simulator on the Windows host machine) If you see this message, it is working Listening to port 4567 Connected!!!
 
 ## Problem Solving Process
-#### 1. Finish all TODOs and compile with following process:
+#### 1. Finish all TODOs in the code files and compile with following bash commands:
 ```bash
-mkdir build
 cd build
 cmake .. && make
-./ExtendedKF
 ```
 
-#### 2. Throws a variable declaration error as shown in bellow. The solution is:
+#### 2. Throws a few variable declaration error (see bellow). The solution to solve these error is:
    * The class variables must be declared in the class defination part of header file - [FusionFKF.h].
    
    ![alt text][error1]
