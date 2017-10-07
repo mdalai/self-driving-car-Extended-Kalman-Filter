@@ -81,7 +81,11 @@ cmake .. && make
 ## Kalman Filter algorithm
 ![kf_algorithm]
 
-* I liked [this resource](http://www.ilectureonline.com/lectures/subject/SPECIAL%20TOPICS/26/190) to grab the basic idea of Kalman Filter.
+* I liked following resources to grab the basic idea of Kalman Filter.
+  * [iLectureOnline](http://www.ilectureonline.com/lectures/subject/SPECIAL%20TOPICS/26/190)
+  * [The Extended Kalman Filter: An Interactive Tutorial for Non-Experts](http://home.wlu.edu/~levys/kalman_tutorial/)
+  * [Understanding and Applying Kalman Filtering](http://biorobotics.ri.cmu.edu/papers/sbp_papers/integrated3/kleeman_kalman_basics.pdf)
+
 * To code the algorithm into computer, we have to use Matrix and Vector. 
 * Processing Laser data into algorithm is easier to understand. However, the Radar data is complex. I struggled a lot to understand Radar data processing. Radar is in Polar space. So we have to transform it Polar to Cartesian and Cartesian to Polar. This makes the C++ code complex.
 
