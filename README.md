@@ -23,6 +23,7 @@ Udacity Self Driving Car Nanodegree Term2 Project 1
 [test2]: ./assets/test2.PNG
 [test3]: ./assets/test3.PNG
 [overview]: ./assets/overview.PNG
+[kf_algorithm]: ./assets/KF_algorithm.PNG
 
 ## Overview
 ![alt text][overview]
@@ -76,6 +77,9 @@ cmake .. && make
 ./ExtendedKF # or ./particle_filter 
 ```
 (Make sure you also run the simulator on the Windows host machine) If you see this message, it is working Listening to port 4567 Connected!!!
+
+## Kalman Filter algorithm
+![kf_algorithm]
 
 ## Problem Solving Process
 #### 1. Finish all TODOs in the code files and compile with following bash commands:
